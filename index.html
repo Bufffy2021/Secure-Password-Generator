@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas Seguras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Contraseñas Seguras</h1>
+        <div class="password-display">
+            <input type="text" id="password" readonly>
+            <button id="copy-btn">Copiar</button>
+        </div>
+        <div class="controls">
+            <label for="length">Longitud de la contraseña:</label>
+            <input type="number" id="length" min="8" max="32" value="16">
+            <div>
+                <label>
+                    <input type="checkbox" id="include-lowercase" checked> Incluir minúsculas
+                </label>
+                <label>
+                    <input type="checkbox" id="include-uppercase" checked> Incluir mayúsculas
+                </label>
+                <label>
+                    <input type="checkbox" id="include-numbers" checked> Incluir números
+                </label>
+                <label>
+                    <input type="checkbox" id="include-special" checked> Incluir caracteres especiales
+                </label>
+            </div>
+            <button id="generate-btn">Generar Contraseña</button>
+        </div>
+
+        <!-- Créditos -->
+        <div class="credits">
+            <p>Desarrollado por <strong>Buffy2021</strong></p>
+            <p>Creado para explorar mis capacidades y experimentar en lenguajes de programación.</p>
+            <div class="social-links">
+                <a href="https://github.com/Bufffy2021" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="social-icon">
+                    GitHub
+                </a>
+                <a href="https://bit.ly/imbf" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/HTML5_logo_and_wordmark.svg" alt="Portfolio" class="social-icon">
+                    Portafolio
+                </a>
+            </div>
+            <p><strong>Colaboración:</strong> Fxxp64 ayudó en el CSS.</p>
+            <p class="license">Este proyecto está licenciado bajo la Licencia Copyright © Buffy2021</p>
+        </div>
+
+        <!-- Modo oscuro -->
+        <button id="toggle-theme">Modo Oscuro</button>
+
+        <!-- Indicador de fuerza de la contraseña -->
+        <div id="password-strength-container">
+            <label for="password-strength">Fuerza de la Contraseña:</label>
+            <div id="password-strength"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
